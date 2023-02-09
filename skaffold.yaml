@@ -3,6 +3,8 @@ kind: Config
 metadata:
   name: skaffold-issue-3849
 build:
+  local:
+    push: true
   artifacts:
   - image: grafnverivox/skaffold-issue-3849-demo
     docker:
