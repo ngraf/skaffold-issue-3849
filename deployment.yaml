@@ -1,0 +1,33 @@
+
+# This file has been created by command "skaffold init --generate-manifests". Then only values have been modified.
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: skaffold-issue-3849
+  labels:
+    app: skaffold-issue-3849
+spec:
+  clusterIP: None
+  selector:
+    app: skaffold-issue-3849
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skaffold-issue-3849
+  labels:
+    app: skaffold-issue-3849
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: skaffold-issue-3849
+  template:
+    metadata:
+      labels:
+        app: skaffold-issue-3849
+    spec:
+      containers:
+      - name: skaffold-issue-3849
+        image: grafnverivox/skaffold-issue-3849-demo

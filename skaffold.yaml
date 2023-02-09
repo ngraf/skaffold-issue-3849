@@ -1,0 +1,12 @@
+apiVersion: skaffold/v4beta1
+kind: Config
+metadata:
+  name: skaffold-issue-3849
+build:
+  artifacts:
+  - image: grafnverivox/skaffold-issue-3849-demo
+    docker:
+      dockerfile: Dockerfile
+manifests:
+  rawYaml:
+  - deployment.yaml
