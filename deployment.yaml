@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
       - name: skaffold-issue-3849
-        image: grafnverivox/skaffold-issue-3849-demo
+        image: skaffold-issue-3849-demo

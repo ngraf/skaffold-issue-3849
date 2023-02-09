@@ -6,7 +6,7 @@ build:
   local:
     push: true
   artifacts:
-  - image: grafnverivox/skaffold-issue-3849-demo
+  - image: skaffold-issue-3849-demo
     docker:
       dockerfile: Dockerfile
 manifests:
