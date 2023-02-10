@@ -19,7 +19,7 @@ Given you followed the following steps
 4) Build and push version `v2` with slighty different content with `docker`. (We do this via `docker buid` and not `skaffold build` to prevent `skaffold` gets to know what is going on. In reality the `v2` has been built and pushed on a different machine.)
 
 
-    $ docker build -t ${REPO}/skaffold-issue-3849-demo:v2
+    $ date > changed_file.txt && docker build -t ${REPO}/skaffold-issue-3849-demo:v2 .
     
 5) Push the image just built with `docker`
 
