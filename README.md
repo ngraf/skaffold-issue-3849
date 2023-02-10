@@ -31,8 +31,9 @@ $ docker push ${REPO}/skaffold-issue-3849-demo:v2
 
 6) Build version `v2` with Skaffold
     
-
+```sh
     $ skaffold build --default-repo=${REPO} --tag v2
+```
 
 Then the current unexpected state is Skaffold builds it unnecessarily
 ----
